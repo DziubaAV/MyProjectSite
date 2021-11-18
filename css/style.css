@@ -69,8 +69,8 @@ body {margin:0;}
   display: block;
 }
 
-.main {
-  padding: 16px;
+.main-content{
+  padding: 5px;
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
@@ -80,3 +80,97 @@ body {margin:0;}
   top: 0;
   width: 100%;
 }
+
+.secret_link:hover {
+  cursor: not-allowed;
+}
+
+/* Галерея */
+
+/* .image-container {
+	display: flex;
+
+} */
+.photo-block img{
+	max-width: 300px;
+  max-height: 150px;
+}
+.photo-block .image-container{
+	border-top: 2px green dotted;
+	border-bottom: 2px green dotted;
+}
+
+.photo-block{
+	border: 2px dotted green;
+	width: 300px;
+    height: 200px;
+	margin: 5px;
+    border-radius: 25px;
+}
+
+.photo-block:hover .button{
+	background: black;
+}
+
+/* .image-container{
+	display: flex;
+  justify-content: space-around;
+} */
+
+.photo-name{
+	display: flex;
+	justify-content: center;
+}
+
+.button-container{
+	display: flex;
+	justify-content: space-around;
+	height: 35px;
+}
+
+.button-container .button{
+	flex: 1;
+    background: green;
+    border-radius: 0;
+    margin: 0;
+	background: green;
+}
+
+.button-container .button:first-child{
+	border-bottom-left-radius: 22px;
+}
+
+.button-container .button:last-child{
+	border-bottom-right-radius: 22px;
+}
+
+.button-container .button:nth-child(2n){
+	background: yellow;
+}
+
+.page{
+	display: none;
+}
+
+.page:target{
+	display: block;
+}
+
+
+.logo {
+  text-align: center;
+}
+
+.logo-text {
+  color: #66C05D;
+  font-size: 57px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+  .logo-flex {
+display: flex;
+align-items: center;
+
+  } */
