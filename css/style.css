@@ -1,71 +1,82 @@
-.body {
-    font-family: 'Roboto', sans-serif;
-    background-color: grey;
-    font-size: 14px;
-}
-.wrapper {
-    max-width: 1110;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+body {margin:0;}
 
-}
-.nav {
-    display: flex;
-    justify-content: center;
-    /* text-decoration: none; */
-    list-style-type: none;
-    padding-left: 0;
-    }
-
-    .nav > li {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .nav > li > a {
-        text-decoration: none;
-        color: #333333;
-    }
-
-    .header {
-        background-color: white;
-    }
-    .header-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .logo {
-        color: #66C05D;
-        font-size: 36px;
-        font-weight: 700;
-    }
-
-    .header-info span {
-        font-size: 16px;
-    }
-
-.header-info button {
-    font-size: 14px;
-    border-radius: 10px;
-    border: 2px solid #66c050;
-    background-color: transparent;
-    padding: 10px 15px;
-    margin-left: 20px;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-bottom {
-    padding: 15px 0;
-}
-.header-bottom .nav {
-    font-size: 16px;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-hr {
-    border: none;
-    background-color: #efefef;
-    height: 1px;
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
