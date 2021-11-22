@@ -23,7 +23,13 @@
           <a class="secret_link" href="#">В разработке</a>
         </div>
       </div> 
-      <a href="#form">Формы</a>
+      <div class="dropdown">
+        <button class="dropbtn">HTML Forms</button>
+        <div class="dropdown-content">
+          <a href="#hit">HTML Input Types</a>
+          <a href="#hia">HTML Input Attributes</a>
+        </div>
+      </div> 
     </div>
   </div>  
   
@@ -106,114 +112,204 @@
           </div>                      
         </div>
       
-      <!-- Страница формы -->
-    <div id="form" class="page">
-      <div>
-        <label>
-         Имя: <input type="text"  placeholder=" name">
-        </label>
-      </div>
-
-      <hr> 
-
-      <div>
-        Текст: <input type=" text">
-      </div>
-
-      <hr>
-
-      <div>
-        Пароль: <input type="password"  />
-      </div>
       
-      <hr>
+<!-- HTML Input Types -->
+<div id="hit" class="page"> 
+<div><p>Input Type Text</p></div>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+<hr>
 
-      <div>
-        Файлы: <input type=" file">
-      </div>
-      
-      <hr>
-    
-      <div>
-        Телефон: <input type=" tel">
-      </div>
+<div><p>Input Type Password</p></div>
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+<hr>
 
-      <hr>
-      
-      <div>
-        Дата: <input type="date">
-      </div>
+<div><p>Input Type Submit</p></div>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
 
-      <hr>
+<div><p>Input Type Reset</p></div>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+<hr>
 
-      <div>
-        Время: <input type=" time">
-      </div>
+<div><p>Input Type Radio</p></div>
+<p>Choose your favorite Web language:</p>
 
-      <hr>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+<hr>
 
-      <div>
-        Цвет: <input type="color">
-      </div>
-      
-      <hr>
+<div><p>Input Type Checkbox</p></div>
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+<hr>
 
-      <div>
-        Пол: 
-        Мужской <input type="radio" name=" sex">
-        Женский <input type="radio" name=" sex">
-      </div>
-      
-      <hr>
+<div><p>Input Type Button</p></div>
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<hr>
 
-      <div>
-        Машины: 
-        <label for="tesla">
-          TESLA
-        </label>
-        <input id="tesla" type="radio" name="car">
-        <label>
-          BMW <input type="radio" name="car">
-        </label>
-      </div>
+<div><p>Input Type Color</p></div>
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+<hr>
 
-      <hr>
+<div><p>Input Type Date</p></div>
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+<hr>
 
-      <div>
-        Хобби: 
-        <label>
-          <input type="checkbox"  name="hobby">Книги</label>
-        <label>
-          <input type="checkbox"  name="hobby">Кино</label>
-        <label>
-           <input type=" checkbox" name=" hobby">Концерты</label>
-      </div>
-      
-      <hr>
+<div><p>Input Type Datetime-local</p></div>
+<form>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+<hr>
 
-      <div>
-       <div>Поле для ввода:</div> 
-        <textarea rows=" 10" cols=" 50"></textarea>
-      </div>
+<div><p>Input Type Email</p></div>
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
+<hr>
 
-      <hr>
-<!-- Псевдокласс :focus  -->
-<div> <p>Псевдокласс :focus</p></div>
+<div><p>Input Type File</p></div>
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+<hr>
 
-      <form action="login.php" method="post" id="enter">
-        <div class="form-item">
-          <span class="label">Логин:</span>
-          <span class="field"><input type="text" name="login" value="" class="form-text"></span>
-        </div>
-        <div class="form-item">
-          <span class="label">Пароль:</span>
-          <span class="field"><input type="password" name="pass" class="form-text"></span>
-        </div>
-        <p><input type="submit" value="Войти" /></p>
-       </form>
+<div><p>Input Type Hidden</p></div>
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+<hr>
 
+<div><p>Input Type Month</p></div>
+<form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+<hr>
+
+<div><p>Input Type Number</p></div>
+<form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+<hr>
+
+<div><p>Input Restrictions</p></div>
+<form>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+</form>
+<hr>
+
+<div><p>Input Type Range</p></div>
+<form>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+<hr>
+
+<div><p>Input Type Search</p></div>
+  <form>
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="gsearch">
+  </form>
+  <hr>
+
+  <div><p>Input Type Tel</p></div>
+  <form>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  </form>
+  <hr>
+
+  <div><p>Input Type Time</p></div>
+  <form>
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt">
+  </form>
+<hr>
+
+<div><p>Input Type Url</p></div>
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+<hr>
+
+<div><p>Input Type Week</p></div>
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+</form>
+<hr>
 </div>
-    
+
+<!-- HTML Input Attributes -->
+<div id="hia" class="page">
+  <div><p>The placeholder Attribute</p></div>
+    <label>
+     Имя: <input type="text"  placeholder=" name">
+    </label>
+<hr>
+
+<div><p>The placeholder Attribute</p></div>
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="+375 (код города) 123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+<hr>
+
+
+  </div>
+
       <!-- ВИДЕО -->
 
         <div id="video" class="page">             
@@ -227,6 +323,6 @@
         <audio controls src="The Mandalorian.mp3"></audio>      
       </div>
 
-    </div>
+</div>
 </body>
 </html>

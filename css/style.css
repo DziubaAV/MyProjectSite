@@ -1,10 +1,15 @@
 body {margin:0;}
 
+.main-content {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;}
+
+/* Выпадающее меню */
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: Arial, Helvetica, sans-serif;}
 
 .navbar a {
   float: left;
@@ -12,13 +17,11 @@ body {margin:0;}
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-}
+  text-decoration: none;}
 
 .dropdown {
   float: left;
-  overflow: hidden;
-}
+  overflow: hidden;}
 
 .dropdown .dropbtn {
   font-size: 16px;    
@@ -28,12 +31,10 @@ body {margin:0;}
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
-}
+  margin: 0;}
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
+  background-color: red;}
 
 .dropdown-content {
   display: none;
@@ -41,8 +42,7 @@ body {margin:0;}
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  z-index: 1;}
 
 .dropdown-content a {
   float: none;
@@ -50,154 +50,98 @@ body {margin:0;}
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-}
+  text-align: left;}
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-}
+  background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.main-content{
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px;
-}
+  display: block;}
 
 .menu-fixed {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
-}
-
-.secret_link:hover {
-  cursor: not-allowed;
-}
+  z-index: 1;}
 
 /* Галерея */
+.image-container {
+	display: flex;}
 
-/* .image-container {
-	display: flex;
-
-} */
-.photo-block img{
+.photo-block img {
 	max-width: 300px;
-  max-height: 150px;
-}
+  max-height: 150px;}
+
 .photo-block .image-container{
 	border-top: 2px green dotted;
-	border-bottom: 2px green dotted;
-}
+	border-bottom: 2px green dotted;}
 
 .photo-block{
 	border: 2px dotted green;
 	width: 300px;
-    height: 200px;
+  height: 200px;
 	margin: 5px;
-    border-radius: 25px;
-}
+  border-radius: 25px;}
 
 .photo-block:hover .button{
-	background: black;
-}
+	background: black;}
 
-/* .image-container{
+.image-container{
 	display: flex;
-  justify-content: space-around;
-} */
+  justify-content: space-around;}
 
 .photo-name{
 	display: flex;
-	justify-content: center;
-}
+	justify-content: center;}
 
 .button-container{
 	display: flex;
 	justify-content: space-around;
-	height: 35px;
-}
+	height: 35px;}
 
 .button-container .button{
 	flex: 1;
-    background: green;
-    border-radius: 0;
-    margin: 0;
-	background: green;
-}
+  background: green;
+  border-radius: 0;
+  margin: 0;
+	background: green;}
 
 .button-container .button:first-child{
-	border-bottom-left-radius: 22px;
-}
+	border-bottom-left-radius: 22px;}
 
 .button-container .button:last-child{
-	border-bottom-right-radius: 22px;
-}
+	border-bottom-right-radius: 22px;}
 
 .button-container .button:nth-child(2n){
-	background: yellow;
-}
+	background: yellow;}
 
-.page{
-	display: none;
-}
+/* Спрятать страницу */
+.page {
+	display: none;}
 
 .page:target{
-	display: block;
-}
+	display: block;}
 
 
+  /* ДОМ */
 .logo {
-  text-align: center;
-}
+  text-align: center;}
 
 .logo-text {
   color: #66C05D;
   font-size: 57px;
   font-weight: 700;
-  text-transform: uppercase;
-}
+  text-transform: uppercase;}
 
-
-  .logo-flex {
+.logo-flex {
 display: flex;
-align-items: center;
-  }
+align-items: center;}
 
 
   /* <!-- Псевдокласс :focus  --> */
+input:focus {
+  background-color: bisque;}
 
-  #enter .label {
-    width: 80px; /* Ширина блока с текстом */
-    float: left; /* Расположение в одну строку с полем */
-    text-align: right; /* Выравнивание по правому краю */
-  }
-  #enter .form-text {
-    width: 240px; /* Ширина поля */
-    margin-left: 10px; /* Расстояние между полем и текстом */
-    border: 1px solid #abadb3; /* Рамка вокруг текстового поля */
-    padding: 2px; /* Поля вокруг текста */
-  }
-  #enter .form-item {
-    margin-bottom: 5px; /* Отступ снизу */
-  }
-  #enter .form-text:focus {
-    background: #ffe; /* Цвет фона */
-    border: 1px solid #29B0D9; /* Параметры рамки */
-  }
-  #enter p {
-   margin-left: 90px; /* Сдвиг вправо */
-  }
-
-  
+  /* Разное */
+.secret_link:hover {
+  cursor: not-allowed;}
