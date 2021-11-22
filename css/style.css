@@ -70,9 +70,9 @@ body {margin:0;}
 }
 
 .main-content{
-  padding: 5px;
+  padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: 1500px;
 }
 
 .menu-fixed {
@@ -173,5 +173,31 @@ body {margin:0;}
   .logo-flex {
 display: flex;
 align-items: center;
+  }
 
-  } */
+
+  /* <!-- Псевдокласс :focus  --> */
+
+  #enter .label {
+    width: 80px; /* Ширина блока с текстом */
+    float: left; /* Расположение в одну строку с полем */
+    text-align: right; /* Выравнивание по правому краю */
+  }
+  #enter .form-text {
+    width: 240px; /* Ширина поля */
+    margin-left: 10px; /* Расстояние между полем и текстом */
+    border: 1px solid #abadb3; /* Рамка вокруг текстового поля */
+    padding: 2px; /* Поля вокруг текста */
+  }
+  #enter .form-item {
+    margin-bottom: 5px; /* Отступ снизу */
+  }
+  #enter .form-text:focus {
+    background: #ffe; /* Цвет фона */
+    border: 1px solid #29B0D9; /* Параметры рамки */
+  }
+  #enter p {
+   margin-left: 90px; /* Сдвиг вправо */
+  }
+
+  
