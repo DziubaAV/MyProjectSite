@@ -10,8 +10,7 @@
 </head>
   <body>
 
-<div class="menu-fixed">
-  <nav>
+  <nav class="menu-fixed">
     <ul class="topmenu">
       <li><a href="#home">Дом</a></li>
       <li><a href="#gallery">Галерея</a></li>
@@ -20,7 +19,7 @@
           <li><a href="#video">Видео</a></li>
           <li><a href="#">Музыка</a>
             <ul class="submenu">
-              <li><a href="#musik">Локальная музыка</a></li>
+              <li><a href="#LocalMusic">Локальная музыка</a></li>
               <li><a href="https://music.yandex.by/" target="_blank">Яндекс.Музыка</a></li>
               <li><a href="https://www.loveradio.ru/" target="_blank">Loveradio</a></li>
             </ul>
@@ -34,117 +33,90 @@
         </ul>
       </li>
     </ul>
-  </nav>
-  </div>  
-  
-    <div class="main-content">
-      <!-- Галерея-->
-      <div id="gallery" class="page">
-        <div class="image-container">
-          <div class="photo-block">
-            <div class="photo-name">
-              Жажда
-            </div>
+  </nav> 
+
+<div class="main-content">
+
+  <!-- Галерея-->
+  <div id="gallery" class="page">
+    <div class="image-container">
+      <div class="photo-block">
+        <div class="photo-name">Жажда</div>
             <div class="image-container">
               <img src="img/gallery/ant.jpg"/>
             </div>
-            <div class="button-container">
-              <div class="button">
-                like
-              </div>
-              <div class="button">
-                +/-
-              </div>
-              <div class="button">
-                dis like
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="button-container">
+                  <div class="button">like</div>
+                    <div class="button">+/-</div>
+                      <div class="button">dis like</div>
+                </div>
+      </div>
+    </div>
 
         <div class="image-container">
           <div class="photo-block">
-            <div class="photo-name">
-              Жажда
-            </div>
-            <div class="image-container">
-              <img src="img/gallery/chk.jpg"/>
-            </div>
-            <div class="button-container">
-              <div class="button">
-                like
-              </div>
-              <div class="button">
-                +/-
-              </div>
-              <div class="button">
-                dis like
-              </div>
-            </div>
+            <div class="photo-name">Жажда</div>
+              <div class="image-container">
+                <img src="img/gallery/chk.jpg"/></div>
+                   <div class="button-container">
+                      <div class="button">like</div>
+                        <div class="button">+/-</div>
+                          <div class="button">dis like</div>
+                    </div>
           </div>
         </div>>
 
         <div class="image-container">
           <div class="photo-block">
-            <div class="photo-name">
-              Жажда
-            </div>
-            <div class="image-container">
-              <img src="img/gallery/plane.jpg"/>
-            </div>
-            <div class="button-container">
-              <div class="button">
-                like
-              </div>
-              <div class="button">
-                +/-
-              </div>
-              <div class="button">
-                dis like
-              </div>
-            </div>
+            <div class="photo-name">Жажда</div>
+              <div class="image-container">
+                <img src="img/gallery/plane.jpg"/></div>
+                  <div class="button-container">
+                    <div class="button">like</div>
+                      <div class="button">+/-</div>
+                        <div class="button">dis like</div>
+                  </div>
           </div>
         </div>
-      </div>
-
-      <!-- ДОМ -->
-        <div id="home" class="page">
-          <div class="logo">
-            <div class="logo-text">САЙТ, в котором нет котиков</div>
-              <img src="img/nope_cat.jpg" alt="nope_cat" style="width:700px" class="center">
-          </div>                      
-        </div>
+  </div>
+    
+  <!-- ДОМ -->
+  <div id="home" class="page">
+    <div class="logo">
+      <div class="logo-text">САЙТ, в котором нет котиков</div>
+        <img src="img/nope_cat.jpg" alt="nope_cat" style="width:700px" class="center">
+    </div>                      
+  </div>                          
       
-      
-<!-- HTML Input Types -->
-<div id="hit" class="page"> 
-<div><p>Input Type Text</p></div>
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form>
-<hr>
+  <!-- HTML Input Types -->
+  <div id="hit" class="page"> 
+    <div><p>Input Type Text</p></div>
+      <form>
+        <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname">
+      </form>
+            <hr>
 
-<div><p>Input Type Password</p></div>
-<form>
-  <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd">
-</form>
-<hr>
+    <div><p>Input Type Password</p></div>
+      <form>
+        <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+              <input type="password" id="pwd" name="pwd">
+      </form>
+            <hr>
 
-<div><p>Input Type Submit</p></div>
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<hr>
+  <div><p>Input Type Submit</p></div>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+         <label for="lname">Last name:</label><br>
+           <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+    </form>
+            <hr>
 
 <div><p>Input Type Reset</p></div>
 <form action="/action_page.php">
@@ -264,14 +236,14 @@
   </form>
   <hr>
 
-  <div><p>Input Type Tel</p></div>
+<div><p>Input Type Tel</p></div>
   <form>
     <label for="phone">Enter your phone number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
   </form>
   <hr>
 
-  <div><p>Input Type Time</p></div>
+<div><p>Input Type Time</p></div>
   <form>
     <label for="appt">Select a time:</label>
     <input type="time" id="appt" name="appt">
@@ -279,10 +251,10 @@
 <hr>
 
 <div><p>Input Type Url</p></div>
-<form>
+  <form>
   <label for="homepage">Add your homepage:</label>
   <input type="url" id="homepage" name="homepage">
-</form>
+  </form>
 <hr>
 
 <div><p>Input Type Week</p></div>
@@ -291,6 +263,7 @@
   <input type="week" id="week" name="week">
 </form>
 <hr>
+
 </div>
 
 <!-- HTML Input Attributes -->
@@ -302,28 +275,22 @@
 <hr>
 
 <div><p>The placeholder Attribute</p></div>
-<form>
-  <label for="phone">Enter a phone number:</label>
-  <input type="tel" id="phone" name="phone"
-  placeholder="+375 (код города) 123-45-678"
-  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-</form>
-<hr>
-
-
-  </div>
+  <form>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+375 (код города) 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  </form>
+</div>
 
       <!-- ВИДЕО -->
-
-        <div id="video" class="page">             
+      <div id="video" class="page">             
           <iframe width="560" height="315" src="https://www.youtube.com/embed/3pCGU3bIPEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                   
-        </div>
-     
-
+      </div>
+    
       <!-- МУЗЫКА -->
-
-      <div id="musik" class="page">
-        <audio controls src="The Mandalorian.mp3"></audio>      
+      <div id="LocalMusic" class="page">
+        <audio controls>
+          <source src="src/The Mandalorian.mp3">
+        </audio>     
       </div>
 
 </div>
