@@ -11,30 +11,33 @@
   <body>
 
 <div class="menu-fixed">
-    <div class="navbar">
-      <a href="#home">Дом</a>
-      <a href="#gallery">Галерея</a>
-      <div class="dropdown">
-        <button class="dropbtn">Медиа
-          </button>
-        <div class="dropdown-content">
-          <a href="#video">Видео</a>
-          <a href="#musik">Музыка</a>
-          <a class="secret_link" href="#">В разработке</a>
-        </div>
-      </div> 
-      <div class="dropdown">
-        <button class="dropbtn">HTML Forms</button>
-        <div class="dropdown-content">
-          <a href="#hit">HTML Input Types</a>
-          <a href="#hia">HTML Input Attributes</a>
-        </div>
-      </div> 
-    </div>
+  <nav>
+    <ul class="topmenu">
+      <li><a href="#home">Дом</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#">Медиа</a>
+        <ul class="submenu">
+          <li><a href="#video">Видео</a></li>
+          <li><a href="#">Музыка</a>
+            <ul class="submenu">
+              <li><a href="#musik">Локальная музыка</a></li>
+              <li><a href="https://music.yandex.by/" target="_blank">Яндекс.Музыка</a></li>
+              <li><a href="https://www.loveradio.ru/" target="_blank">Loveradio</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">HTML Forms</a>
+        <ul class="submenu">
+          <li><a href="#hit">HTML Input Types</a></li>
+          <li><a href="#hia">HTML Input Attributes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
   </div>  
   
     <div class="main-content">
-
       <!-- Галерея-->
       <div id="gallery" class="page">
         <div class="image-container">

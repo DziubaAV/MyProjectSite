@@ -6,57 +6,77 @@ body {margin:0;}
   height: 1500px;}
 
 /* Выпадающее меню */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;}
+  nav {background: #413F3C;}
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;}
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.dropdown {
-  float: left;
-  overflow: hidden;}
+  nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-.dropdown .dropbtn {
-  font-size: 16px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;}
+  nav a {
+    text-decoration: none;
+    display: block;
+    transition: .2s linear;
+  }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;}
+  .topmenu > li {
+    float: left;
+    position: relative;
+    border-left: 1px solid black;
+  }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;}
+  .topmenu > li:first-child {border-left: 0;}
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;}
+  .topmenu > li > a {  
+    padding: 20px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+  }
 
-.dropdown-content a:hover {
-  background-color: #ddd;}
+  .submenu a:hover {color: red;}
+  
+  .submenu {
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    background: white;
+    border-top: 1px solid #CBCBCC;
+    border-left: 1px solid #CBCBCC;
+    border-right: 1px solid #CBCBCC;
+    visibility: hidden;
+    opacity: 0;  
+    transition: .3s linear;  
+  }
+  .submenu li {position: relative;}
 
-.dropdown:hover .dropdown-content {
-  display: block;}
+  .submenu li a {
+    color: #282828;
+    padding: 10px;
+    font-size: 19px;
+    border-bottom: 1px solid #CBCBCC;
+  }
+
+  .submenu .submenu {
+    position: absolute;
+    left: 100%;
+    top: -1px;
+    transition: .3s linear;
+  }
+
+  nav li:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
 
 .menu-fixed {
   position: fixed;
