@@ -1,9 +1,8 @@
 body {margin:0;}
 
 .main-content {
-  padding: 30px;
-  margin-top: 63px;
-  height: 1500px;}
+    margin-top: 90px;
+  }
 
 /* Выпадающее меню */
   nav {background: #413F3C;}
@@ -84,49 +83,69 @@ body {margin:0;}
   width: 100%;
   z-index: 1;}
 
+  /* Картинка над текстом */
+  .menu-fixed a:hover {
+    color: #fff;
+  }
+  .menu-fixed a:hover i {
+    display: none;
+  }
+  .menu-fixed a:hover b {
+    display: block;
+  }
   
+  .menu-fixed li b {
+    display: none;}
 
 /* Галерея */
-.image-container {
-	display: flex;}
-
 .photo-block img {
 	max-width: 300px;
   max-height: 150px;}
 
 .photo-block .image-container{
-	border-top: 2px green dotted;
-	border-bottom: 2px green dotted;}
+	border-top: 3px silver solid;
+	border-bottom: 3px silver solid;}
 
 .photo-block{
-	border: 2px dotted green;
-	width: 300px;
+	border-style: solid;;
+	width: 350px;
   height: 200px;
 	margin: 5px;
   border-radius: 25px;}
 
+  .photo-block .photo-name {
+    font-weight:bold;
+    font-size: 20px;
+  }
+
 .photo-block:hover .button{
-	background: black;}
+	background: red;}
 
 .image-container{
-	display: flex;
-  justify-content: space-around;}
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;;
+  justify-content: center;}
 
 .photo-name{
 	display: flex;
-	justify-content: center;}
+	justify-content: center;
+  text-align: center}
+
+  .button {
+    font-weight:bold;
+    text-align: center
+  }
 
 .button-container{
 	display: flex;
 	justify-content: space-around;
-	height: 35px;}
+	height: 21px;}
 
 .button-container .button{
 	flex: 1;
-  background: green;
-  border-radius: 0;
-  margin: 0;
-	background: green;}
+  border-radius: 8;
+  margin: 0;}
 
 .button-container .button:first-child{
 	border-bottom-left-radius: 22px;}
@@ -135,19 +154,17 @@ body {margin:0;}
 	border-bottom-right-radius: 22px;}
 
 .button-container .button:nth-child(2n){
-	background: yellow;}
+	background: white;}
 
 /* Спрятать страницу */
 .page {
-	display: none;}
+  display: none;}
 
 .page:target{
 	display: block;}
 
 
   /* ДОМ */
-.logo {
-  text-align: center;}
 
 .logo-text {
   color: #66C05D;
@@ -156,8 +173,10 @@ body {margin:0;}
   text-transform: uppercase;}
 
 .logo-flex {
-display: flex;
-align-items: center;}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;}
 
 
   /* <!-- Псевдокласс :focus  --> */
@@ -167,3 +186,30 @@ input:focus {
   /* Разное */
 .secret_link:hover {
   cursor: not-allowed;}
+
+.topmenu a:hover {color: red;}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.margin {
+  margin: 34px;
+}
+
+
+.nav a:hover {
+  color: #fff;
+}
+.nav a:hover i {
+  display: none;
+}
+.nav a:hover b {
+  display: block;
+}

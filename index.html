@@ -6,293 +6,338 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/no cats.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <title>Нет котам</title>
 </head>
   <body>
+    <nav class="menu-fixed">
+      <ul class="topmenu">
+        <li><a href="#home"><i class="fa fa-home"></i><b>ДОМ</b></a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#">Медиа</a>
+          <ul class="submenu">
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#">Музыка</a>
+              <ul class="submenu">
+                <li><a href="#LocalMusic">Локальная музыка</a></li>
+                <li><a href="https://music.yandex.by/" target="_blank">Яндекс.Музыка</a></li>
+                <li><a href="https://www.loveradio.ru/" target="_blank">Loveradio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">HTML Forms</a>
+          <ul class="submenu">
+            <li><a href="#hit">HTML Input Types</a></li>
+            <li><a href="#hia">HTML Input Attributes</a></li>
+          </ul>
+        </li>
+        <li><a href="#none"><i class="fa fa-th-list"></i><b>Запрещенный контент</b></a>
+          <ul class="submenu">
+            <li><a class="secret_link" href="#">КОТИКИ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav> 
 
-  <nav class="menu-fixed">
-    <ul class="topmenu">
-      <li><a href="#home">Дом</a></li>
-      <li><a href="#gallery">Галерея</a></li>
-      <li><a href="#">Медиа</a>
-        <ul class="submenu">
-          <li><a href="#video">Видео</a></li>
-          <li><a href="#">Музыка</a>
-            <ul class="submenu">
-              <li><a href="#LocalMusic">Локальная музыка</a></li>
-              <li><a href="https://music.yandex.by/" target="_blank">Яндекс.Музыка</a></li>
-              <li><a href="https://www.loveradio.ru/" target="_blank">Loveradio</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#">HTML Forms</a>
-        <ul class="submenu">
-          <li><a href="#hit">HTML Input Types</a></li>
-          <li><a href="#hia">HTML Input Attributes</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav> 
+    <div class="main-content">
 
-<div class="main-content">
-
-  <!-- Галерея-->
-  <div id="gallery" class="page">
-    <div class="image-container">
-      <div class="photo-block">
-        <div class="photo-name">Жажда</div>
-            <div class="image-container">
-              <img src="img/gallery/ant.jpg"/>
-            </div>
-                <div class="button-container">
-                  <div class="button">like</div>
-                    <div class="button">+/-</div>
-                      <div class="button">dis like</div>
-                </div>
-      </div>
-    </div>
-
+      <!-- Галерея-->
+      <div id="gallery" class="page">
         <div class="image-container">
           <div class="photo-block">
-            <div class="photo-name">Жажда</div>
-              <div class="image-container">
-                <img src="img/gallery/chk.jpg"/></div>
-                   <div class="button-container">
-                      <div class="button">like</div>
-                        <div class="button">+/-</div>
-                          <div class="button">dis like</div>
+            <div class="photo-name">Муравей</div>
+                <div class="image-container">
+                  <img src="img/gallery/1.jpg"/>
+                </div>
+                    <div class="button-container">
+                      <div class="button">Like</div>
+                        <div class="button">50/50</div>
+                          <div class="button">Dislike</div>
                     </div>
           </div>
-        </div>>
 
-        <div class="image-container">
           <div class="photo-block">
-            <div class="photo-name">Жажда</div>
+            <div class="photo-name">Цыплята</div>
               <div class="image-container">
-                <img src="img/gallery/plane.jpg"/></div>
+                <img src="img/gallery/2.jpg"/></div>
                   <div class="button-container">
-                    <div class="button">like</div>
-                      <div class="button">+/-</div>
-                        <div class="button">dis like</div>
+                    <div class="button">Like</div>
+                      <div class="button">50/50</div>
+                        <div class="button">Dislike</div>
                   </div>
           </div>
-        </div>
-  </div>
-    
-  <!-- ДОМ -->
-  <div id="home" class="page">
-    <div class="logo">
-      <div class="logo-text">САЙТ, в котором нет котиков</div>
-        <img src="img/nope_cat.jpg" alt="nope_cat" style="width:700px" class="center">
-    </div>                      
-  </div>                          
+        
+          <div class="photo-block">
+            <div class="photo-name">Самолет</div>
+              <div class="image-container">
+                <img src="img/gallery/3.jpg"/></div>
+                  <div class="button-container">
+                    <div class="button">Like</div>
+                      <div class="button">50/50</div>
+                        <div class="button">Dislike</div>
+                  </div>
+          </div>
+
+          <div class="photo-block">
+            <div class="photo-name">Сердце</div>
+                <div class="image-container">
+                  <img src="img/gallery/4.jpg"/>
+                </div>
+                    <div class="button-container">
+                      <div class="button">Like</div>
+                        <div class="button">50/50</div>
+                          <div class="button">Dislike</div>
+                    </div>
+          </div>
+
+          <div class="photo-block">
+            <div class="photo-name">Шар</div>
+                <div class="image-container">
+                  <img src="img/gallery/5.jpg"/>
+                </div>
+                    <div class="button-container">
+                      <div class="button">Like</div>
+                        <div class="button">50/50</div>
+                          <div class="button">Dislike</div>
+                    </div>
+          </div>
+
+          <div class="photo-block">
+            <div class="photo-name">Одуванчик</div>
+                <div class="image-container">
+                  <img src="img/gallery/6.jpg"/>
+                </div>
+                    <div class="button-container">
+                      <div class="button">Like</div>
+                        <div class="button">50/50</div>
+                          <div class="button">Dislike</div>
+                    </div>
+          </div>
+
+        </div>   
+      </div>
+
+
+      <!-- ДОМ -->
       
-  <!-- HTML Input Types -->
-  <div id="hit" class="page"> 
-    <div><p>Input Type Text</p></div>
-      <form>
-        <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname"><br>
+        <div id="home" class="page">
+          <div class="logo-flex">
+            <div class="logo-text">САЙТ, в котором нет котиков</div>
+              <img src="img/nope_cat.jpg" alt="nope_cat" style="width:385px" class="center">                         
+          </div>                          
+        </div>   
+
+      <!-- HTML Input Types -->
+    <div class="margin">
+        <div id="hit" class="page">
+          <div><p class="text">Input Type Text</p></div>
+            <form>
+              <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                  <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+            </form>
+                  <hr>
+
+          <div><p class="text">Input Type Password</p></div>
+            <form>
+              <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                  <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd">
+            </form>
+                  <hr>
+
+        <div><p class="text">Input Type Submit</p></div>
+          <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+          </form>
+                  <hr>
+
+      <div><p class="text">Input Type Reset</p></div>
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
             <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname">
-      </form>
-            <hr>
-
-    <div><p>Input Type Password</p></div>
-      <form>
-        <label for="username">Username:</label><br>
-          <input type="text" id="username" name="username"><br>
-            <label for="pwd">Password:</label><br>
-              <input type="password" id="pwd" name="pwd">
-      </form>
-            <hr>
-
-  <div><p>Input Type Submit</p></div>
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-         <label for="lname">Last name:</label><br>
-           <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
             <input type="submit" value="Submit">
-    </form>
-            <hr>
+            <input type="reset">
+      </form>
+              <hr>
 
-<div><p>Input Type Reset</p></div>
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-  <input type="reset">
-</form>
-<hr>
+      <div><p class="text">Input Type Radio</p></div>
+      <p>Choose your favorite Web language:</p>
+          <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">HTML</label><br>
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css">CSS</label><br>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">JavaScript</label>
+          </form>
+                  <hr>
 
-<div><p>Input Type Radio</p></div>
-<p>Choose your favorite Web language:</p>
+      <div><p class="text">Input Type Checkbox</p></div>
+        <form>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label>
+      </form>
+              <hr>
 
-<form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form>
-<hr>
+      <div><p class="text">Input Type Button</p></div>
+        <input type="button" onclick="alert('Hello World!')" value="Нажми меня!">
+          <hr>
 
-<div><p>Input Type Checkbox</p></div>
-<form>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> I have a car</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3"> I have a boat</label>
-</form>
-<hr>
+      <div><p class="text">Input Type Color</p></div>
+        <form>
+          <label for="favcolor">Select your favorite color:</label>
+          <input type="color" id="favcolor" name="favcolor">
+        </form>
+                  <hr>
 
-<div><p>Input Type Button</p></div>
-<input type="button" onclick="alert('Hello World!')" value="Click Me!">
-<hr>
+      <div><p class="text">Input Type Date</p></div>
+        <form>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+        </form>
+                <hr>
 
-<div><p>Input Type Color</p></div>
-<form>
-  <label for="favcolor">Select your favorite color:</label>
-  <input type="color" id="favcolor" name="favcolor">
-</form>
-<hr>
+      <div><p class="text">Input Type Datetime-local</p></div>
+        <form>
+          <label for="birthdaytime">Birthday (date and time):</label>
+          <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </form>
+                <hr>
 
-<div><p>Input Type Date</p></div>
-<form>
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday">
-</form>
-<hr>
+      <div><p class="text">Input Type Email</p></div>
+        <form>
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email">
+        </form>
+                <hr>
 
-<div><p>Input Type Datetime-local</p></div>
-<form>
-  <label for="birthdaytime">Birthday (date and time):</label>
-  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-</form>
-<hr>
+      <div><p class="text">Input Type File</p></div>
+        <form>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile">
+        </form>
+                <hr>
 
-<div><p>Input Type Email</p></div>
-<form>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email">
-</form>
-<hr>
+      <div><p class="text">Input Type Hidden</p></div>
+        <form>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <input type="hidden" id="custId" name="custId" value="3487">
+          <input type="submit" value="Submit">
+        </form>
+                <hr>
 
-<div><p>Input Type File</p></div>
-<form>
-  <label for="myfile">Select a file:</label>
-  <input type="file" id="myfile" name="myfile">
-</form>
-<hr>
+      <div><p class="text">Input Type Month</p></div>
+        <form>
+          <label for="bdaymonth">Birthday (month and year):</label>
+          <input type="month" id="bdaymonth" name="bdaymonth">
+        </form>
+                <hr>
 
-<div><p>Input Type Hidden</p></div>
-<form>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <input type="hidden" id="custId" name="custId" value="3487">
-  <input type="submit" value="Submit">
-</form>
-<hr>
+      <div><p class="text">Input Type Number</p></div>
+        <form>
+          <label for="quantity">Quantity (between 1 and 5):</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </form>
+                <hr>
 
-<div><p>Input Type Month</p></div>
-<form>
-  <label for="bdaymonth">Birthday (month and year):</label>
-  <input type="month" id="bdaymonth" name="bdaymonth">
-</form>
-<hr>
+      <div><p class="text">Input Restrictions</p></div>
+        <form>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+        </form>
+                <hr>
 
-<div><p>Input Type Number</p></div>
-<form>
-  <label for="quantity">Quantity (between 1 and 5):</label>
-  <input type="number" id="quantity" name="quantity" min="1" max="5">
-</form>
-<hr>
+      <div><p class="text">Input Type Range</p></div>
+        <form>
+          <label for="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50">
+        </form>
+                <hr>
 
-<div><p>Input Restrictions</p></div>
-<form>
-  <label for="quantity">Quantity:</label>
-  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
-</form>
-<hr>
+      <div><p class="text">Input Type Search</p></div>
+        <form>
+          <label for="gsearch">Search Google:</label>
+          <input type="search" id="gsearch" name="gsearch">
+        </form>
+                <hr>
 
-<div><p>Input Type Range</p></div>
-<form>
-  <label for="vol">Volume (between 0 and 50):</label>
-  <input type="range" id="vol" name="vol" min="0" max="50">
-</form>
-<hr>
+      <div><p class="text">Input Type Tel</p></div>
+        <form>
+          <label for="phone">Enter your phone number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </form>
+                <hr>
 
-<div><p>Input Type Search</p></div>
-  <form>
-    <label for="gsearch">Search Google:</label>
-    <input type="search" id="gsearch" name="gsearch">
-  </form>
-  <hr>
+      <div><p class="text">Input Type Time</p></div>
+        <form>
+          <label for="appt">Select a time:</label>
+          <input type="time" id="appt" name="appt">
+        </form>
+                <hr>
 
-<div><p>Input Type Tel</p></div>
-  <form>
-    <label for="phone">Enter your phone number:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-  </form>
-  <hr>
+      <div><p class="text">Input Type Url</p></div>
+        <form>
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+        </form>
+                <hr>
 
-<div><p>Input Type Time</p></div>
-  <form>
-    <label for="appt">Select a time:</label>
-    <input type="time" id="appt" name="appt">
-  </form>
-<hr>
+      <div><p class="text">Input Type Week</p></div>
+        <form>
+          <label for="week">Select a week:</label>
+          <input type="week" id="week" name="week">
+        </form>
+                <hr>
+      </div>
+    
+    </div>
 
-<div><p>Input Type Url</p></div>
-  <form>
-  <label for="homepage">Add your homepage:</label>
-  <input type="url" id="homepage" name="homepage">
-  </form>
-<hr>
+    <!-- HTML Input Attributes -->
+  <div class="margin">
+    <div id="hia" class="page">
+      <div><p class="text">The placeholder Attribute</p></div>
+        <label>
+        Имя: <input type="text"  placeholder=" name">
+        </label>
+                <hr>
 
-<div><p>Input Type Week</p></div>
-<form>
-  <label for="week">Select a week:</label>
-  <input type="week" id="week" name="week">
-</form>
-<hr>
-
-</div>
-
-<!-- HTML Input Attributes -->
-<div id="hia" class="page">
-  <div><p>The placeholder Attribute</p></div>
-    <label>
-     Имя: <input type="text"  placeholder=" name">
-    </label>
-<hr>
-
-<div><p>The placeholder Attribute</p></div>
-  <form>
-    <label for="phone">Enter a phone number:</label>
-    <input type="tel" id="phone" name="phone" placeholder="+375 (код города) 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-  </form>
-</div>
+    <div><p class="text">The placeholder Attribute</p></div>
+      <form>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+375 (xx) 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      </form>
+    </div>
+  </div>
 
       <!-- ВИДЕО -->
-      <div id="video" class="page">             
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/3pCGU3bIPEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                   
-      </div>
-    
+      <div class="center">
+      <div id="video" class="page">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1Aq9OJuS3ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
+      </div>  
       <!-- МУЗЫКА -->
       <div id="LocalMusic" class="page">
+        <div class="center">
         <audio controls>
           <source src="src/The Mandalorian.mp3">
-        </audio>     
+        </audio> 
+        </div>      
       </div>
-
-</div>
+    </div>
 </body>
 </html>
