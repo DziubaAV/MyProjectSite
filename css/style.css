@@ -213,3 +213,7 @@ input:focus {
 .nav a:hover b {
   display: block;
 }
+
+.topnav-right {
+    float: right
+}
