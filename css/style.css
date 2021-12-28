@@ -88,26 +88,32 @@ body {margin:0;}
   display: flex;
   justify-content: center;
 }
-  .mobile{
+.mobile{
     width: 600px;
     height: 565px;
     border: 3px black solid;
     overflow-y: scroll;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
-  
-  .exit-wraper{
+  .big-text {
+    margin:auto;
+  }
+.exit-wraper{
     width: 101px;
-    height: 42px;
+    height: 44px;
     position: absolute;
   }
 
-  .exit{
+.exit{
     background: red;
     height: 42px;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: double;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
