@@ -83,6 +83,37 @@ body {margin:0;}
   width: 100%;
   z-index: 1;}
 
+/* Fixbutton */
+.center2 {
+  display: flex;
+  justify-content: center;
+}
+  .mobile{
+    width: 600px;
+    height: 565px;
+    border: 3px black solid;
+    overflow-y: scroll;
+  }
+  
+  .exit-wraper{
+    width: 101px;
+    height: 42px;
+    position: absolute;
+  }
+
+  .exit{
+    background: red;
+    height: 42px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+
+
   /* Картинка над текстом */
   .menu-fixed a:hover {
     color: #fff;
