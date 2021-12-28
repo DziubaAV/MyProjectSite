@@ -101,7 +101,7 @@ body {margin:0;}
     margin:auto;
   }
 .exit-wraper{
-    width: 101px;
+    width: 261px;
     height: 44px;
     position: absolute;
   }
@@ -109,13 +109,13 @@ body {margin:0;}
 .exit{
     background: red;
     height: 42px;
-    width: 100px;
+    width: 281px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: double;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
 
